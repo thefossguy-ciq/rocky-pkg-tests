@@ -1,6 +1,7 @@
 name: RLC-8.6 CVE-2025-58060 aarch64-linux
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 

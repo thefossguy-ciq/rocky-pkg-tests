@@ -1,0 +1,24 @@
+name: RLC-8.6 CVE-2025-58060 aarch64-linux
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Build package
+        run: nix build .#packages.aarch64-linux.rlc_8_6_cve_2025-58060
+
+      - name: Run test driver
+        env:
+          DEPOT_USER: ${{ secrets.DEPOT_USER }}
+          DEPOT_TOKEN: ${{ secrets.DEPOT_TOKEN }}
+        run: ./result/bin/test-driver

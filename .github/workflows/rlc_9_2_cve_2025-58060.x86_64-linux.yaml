@@ -1,0 +1,24 @@
+name: RLC-9.2 CVE-2025-58060 x86_64-linux
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Build package
+        run: nix build .#packages.x86_64-linux.rlc_9_2_cve_2025-58060
+
+      - name: Run test driver
+        env:
+          DEPOT_USER: ${{ secrets.DEPOT_USER }}
+          DEPOT_TOKEN: ${{ secrets.DEPOT_TOKEN }}
+        run: ./result/bin/test-driver

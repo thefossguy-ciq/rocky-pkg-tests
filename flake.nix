@@ -27,7 +27,7 @@
           system:
           f {
             pkgs = import nixpkgs {
-              inherit system;
+              localSystem = system;
               overlays = [
                 nix-vm-test.overlays.default
               ];

@@ -41,5 +41,13 @@
         { pkgs, ... }:
         (import ./tests/vulns/CVE-2025-58060.nix { inherit pkgs; })
       );
+
+      workflows = forAllSupportedSystems (
+        { pkgs, ... }:
+        (import ./workflows.nix {
+          inherit pkgs;
+          allPackages = self.outputs.packages;
+        })
+      );
     };
 }

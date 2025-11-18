@@ -14,6 +14,7 @@ let
       name: ${rlcVersion} CVE-${cveId} ${system}
 
       on:
+        workflow_dispatch:
         schedule:
           - cron: "0 0 * * *"
 

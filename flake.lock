@@ -2,42 +2,28 @@
   "nodes": {
     "nix-vm-test": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1763225800,
-        "narHash": "sha256-GQj2retMybx3jVaholt7PkRXuF+TRyKOzUGfgb3Lc94=",
+        "lastModified": 1763556034,
+        "narHash": "sha256-S32GwgiZFACQZ+xRzMGm4ubPqVDgyrB4VIstEeCHQ/k=",
         "type": "tarball",
-        "url": "https://github.com/thefossguy/nix-vm-test/archive/refs/heads/fix-repo-locking-for-rocky.zip"
+        "url": "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/thefossguy/nix-vm-test/archive/refs/heads/fix-repo-locking-for-rocky.zip"
+        "url": "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1708475490,
-        "narHash": "sha256-g1v0TsWBQPX97ziznfJdWhgMyMGtoBFs102xSYO4syU=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "0e74ca98a74bc7270d28838369593635a5db3260",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1763283776,
-        "narHash": "sha256-q3IHets/BZS0GVc6FtV8xqWKSmYeh3ahVVdRMTQWXI8=",
-        "rev": "50a96edd8d0db6cc8db57dab6bb6d6ee1f3dc49a",
+        "lastModified": 1763421233,
+        "narHash": "sha256-re7SYzc1gs7069DojQiW90fPjNfCUJ9+RUEplQPqxDs=",
+        "rev": "89c2b2330e733d6cdb5eae7b899326930c2c0648",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre896953.50a96edd8d0d/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre897910.89c2b2330e73/nixexprs.tar.xz"
       },
       "original": {
         "type": "tarball",
@@ -47,7 +33,7 @@
     "root": {
       "inputs": {
         "nix-vm-test": "nix-vm-test",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs"
       }
     }
   },

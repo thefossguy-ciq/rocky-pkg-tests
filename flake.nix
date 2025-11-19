@@ -4,8 +4,10 @@
   inputs = {
     nixpkgs.url = "https://nixos.org/channels/nixos-unstable/nixexprs.tar.xz";
 
-    #nix-vm-test.url = "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip";
-    nix-vm-test.url = "https://github.com/thefossguy/nix-vm-test/archive/refs/heads/fix-repo-locking-for-rocky.zip";
+    nix-vm-test = {
+      url = "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

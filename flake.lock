@@ -7,27 +7,32 @@
         ]
       },
       "locked": {
-        "lastModified": 1763556034,
-        "narHash": "sha256-S32GwgiZFACQZ+xRzMGm4ubPqVDgyrB4VIstEeCHQ/k=",
-        "type": "tarball",
-        "url": "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip"
+        "lastModified": 1763976673,
+        "narHash": "sha256-QPeI8WR+brwodiy4YNfOnLI7rOHJfFPrGm+xT/HmtT4=",
+        "owner": "numtide",
+        "repo": "nix-vm-test",
+        "rev": "8611bdd7a49750a880be9ee2ea9f68c53f8c9299",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip"
+        "owner": "numtide",
+        "repo": "nix-vm-test",
+        "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1763421233,
-        "narHash": "sha256-re7SYzc1gs7069DojQiW90fPjNfCUJ9+RUEplQPqxDs=",
-        "rev": "89c2b2330e733d6cdb5eae7b899326930c2c0648",
-        "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre897910.89c2b2330e73/nixexprs.tar.xz"
+        "lastModified": 1763998843,
+        "narHash": "sha256-0q4ysbp+4Hs+fbcf+6WZniyn/Mu45h6tVW281MtDBMI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "cb661ad65cb2f088192c4a8f87a929ccd448cbf2",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://nixos.org/channels/nixos-unstable/nixexprs.tar.xz"
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "root": {

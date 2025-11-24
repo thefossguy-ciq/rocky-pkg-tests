@@ -2,10 +2,10 @@
   description = "Regression testing for RLC packages";
 
   inputs = {
-    nixpkgs.url = "https://nixos.org/channels/nixos-unstable/nixexprs.tar.xz";
+    nixpkgs.url = "github:nixos/nixpkgs";
 
     nix-vm-test = {
-      url = "https://github.com/numtide/nix-vm-test/archive/refs/heads/main.zip";
+      url = "github:numtide/nix-vm-test";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

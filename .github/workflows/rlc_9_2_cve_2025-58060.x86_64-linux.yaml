@@ -6,7 +6,7 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
@@ -14,6 +14,9 @@ jobs:
 
       - name: Install Nix
         uses: cachix/install-nix-action@v31
+
+      - name: Setup magic-nix-cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Build package
         run: nix build .#packages.x86_64-linux.rlc_9_2_cve_2025-58060

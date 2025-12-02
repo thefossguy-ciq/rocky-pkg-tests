@@ -2,7 +2,7 @@
   description = "Regression testing for RLC packages";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:thefossguy/nixpkgs?rev=719c6079319b0490f932d00198e16180be276e03";
 
     nix-vm-test = {
       url = "github:numtide/nix-vm-test";

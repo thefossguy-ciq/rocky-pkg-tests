@@ -19,7 +19,7 @@ let
           - cron: "0 0 * * *"
 
       jobs:
-        build:
+        ci:
           runs-on: ubuntu-24.04${lib.strings.optionalString (system == "aarch64-linux") "-arm"}
           steps:
             - name: Checkout repository
@@ -27,6 +27,9 @@ let
 
             - name: Install Nix
               uses: cachix/install-nix-action@v31
+
+            - name: Setup magic-nix-cache
+              uses: DeterminateSystems/magic-nix-cache-action@main
 
             - name: Build package
               run: nix build .#packages.${system}.${packageName}
